@@ -47,6 +47,7 @@ task3 TODOapp
  + 中间为日志列表 [详情](http://www.jianshu.com/p/819245004ca7)
  + 最右为日志展示 [详情](http://www.jianshu.com/p/b28a68b2874e)
  + [点击预览](http://htmlpreview.github.io/?https://github.com/CHANxw/IFE2015/blob/master/task003/index.html)
+ 
 关于个人
 --------
 [简书](http://www.jianshu.com/u/e73691f972bb) + [github](https://github.com/CHANxw) + [邮箱: wb_cxw@163.com](http://mail.163.com/)
