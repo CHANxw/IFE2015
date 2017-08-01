@@ -26,12 +26,15 @@ JS完成的练习任务
  + 实现一个倒计时功能。
  用户通过输入特定时间完成倒计时功能
  + demo task2-2 **[倒计时](http://htmlpreview.github.io/?https://github.com/CHANxw/IFE2015/blob/master/task002/task0002_2.html)**
+ 
 **3. 轮播图**
  + 在轮播图下方自动生成对应图片的小点，点击小点，轮播图自动动画切换到对应的图片
  + demo task2-3 **[轮播图](http://htmlpreview.github.io/?https://github.com/CHANxw/IFE2015/blob/master/task002/task0002_3.html)**
+ 
 **4. 输入提示框**
  + 允许使用鼠标点击选中提示栏中的某个选项，使用键盘上下键来选中提示栏中的某个选项，回车确认选中，将提示内容变更到输入框中
  + demo task2-4 **[输入提示框](http://htmlpreview.github.io/?https://github.com/CHANxw/IFE2015/blob/master/task002/task0002_4.html)**
+ 
 **5. 拖拽交互**
  + 实现一个可拖拽交互的界面
  + demo task2-5 **[拖拽交互](http://htmlpreview.github.io/?https://github.com/CHANxw/IFE2015/blob/master/task002/task0002_5.html)**
