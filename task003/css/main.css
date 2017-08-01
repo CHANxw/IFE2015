@@ -1,0 +1,513 @@
+header {
+    position: relative;
+    height: 56px;
+    padding: 0 60px;
+
+    font-size: 30px;
+    line-height: 56px;
+    color: #EA6F5A;
+
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+header span {
+    position: absolute;
+    top: 10px;
+    letter-spacing: 5px;
+    right: 30px;
+    font-size: 16px;
+}
+.main {
+    width: 100%;
+}
+/*main-menu start*/
+.main-menu .fa-folder,.main-menu .fa-file-o {
+    margin-right: 10px;
+}
+.main-menu .fa-trash-o {
+    display: none;
+    position: absolute;
+    top: 6px;
+    right:0;
+    padding-right: 30px;
+}
+.main-menu {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 56px;
+    bottom: 0;
+    width: 20%;
+    padding-bottom: 60px;
+    color: #fff;
+    background-color: #3f3f3f;
+    line-height: 1.7;
+}
+.main-menu p {
+    font-size: 18px;
+    text-align: center;
+}
+.all-task h1{
+    width: 50%;
+    margin: 30px auto;
+    padding: 6px 30px;
+
+    font-size: 18px;
+    text-align: center;
+    color: rgba(236,114,89,0.7);
+    font-weight: normal;
+    border: 1px solid rgba(236,114,89,0.7);
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+.all-task h1:hover {
+    color: #fff;
+    border-color: #ec7259;
+}
+.all-task .active {
+    color: #fff;
+    background-color: #ec7259;
+    border-color: #ec7259;
+}
+/*menu-list start*/
+.main-menu h2 {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    border-left: 3px solid #3f3f3f;
+
+    font-size: 16px;
+    font-weight: normal;
+}
+.main-menu h2:hover {
+    background-color: #646464;
+    border-color: #646464;
+}
+.main-menu h2:hover .fa-trash-o {
+    display: inline-block;
+}
+.main-menu h3 {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 34px;
+    padding-right: 60px;
+
+    border-left: 3px solid #3f3f3f;
+
+    font-size: 16px;
+    font-weight: normal;
+}
+.main-menu h3:hover {
+    background-color: #646464;
+    border-color: #646464;
+}
+.main-menu h3:hover .fa-trash-o {
+    display: inline-block;
+}
+#menu-lists .active {
+    background-color: #646464;
+    border-color: #ec7259;
+}
+.list li {
+    cursor: pointer;
+}
+.add {
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    background-color: #646464;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .2s ease;
+}
+.main-menu .add:hover {
+    color: #ec7259;
+    background-color: #222;
+}
+.add i {
+    padding-right: 10px;
+}
+/*menu-list end*/
+
+/*child-menu start*/
+.child-menu {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 20%;
+    top: 60px;
+    bottom: 0;
+    width: 20%;
+    padding-bottom: 60px;
+    padding-top: 5px;
+    background-color: #fff;
+}
+.child-menu p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #ec7259;
+}
+.child-menu .status {
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px dashed #ddd;
+}
+
+.child-menu .status .active {
+    background-color: #ec7259;
+    color: #fff;
+}
+
+.child-menu .status button{
+    width: 60px;
+    height: 30px;
+    margin: 2px 5px;
+
+    color: #333;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    transition: .2s ease;
+}
+@media screen and (max-width: 1080px) {
+    .child-menu .status button {
+        width: 80%;
+    }
+    .all-task h1 {
+        font-size: 16px;
+    }
+}
+.child-menu .status button:hover {
+    background-color: #ec7259;
+    color: #fff;
+}
+#task-lists {
+    line-height: 1.5;
+}
+#task-lists div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 2px 10px;
+    color: #ec7259;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+#task-lists ul li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #555;
+    padding: 2px 0 2px 16px;
+    border-left: 3px solid #fff;
+    transition: .2s ease;
+}
+#task-lists ul li:hover {
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+}
+#task-lists .active {
+    color: #000;
+    background-color: #d9d9d9;
+    border-color: #ec7259;
+}
+#task-lists .task-finished {
+    color: #48C486;
+}
+#task-lists .task-finished .fa-check {
+    padding-right: 10px;
+}
+.child-menu .add {
+    background-color: #ec7259;
+}
+.child-menu .add:hover {
+    color: #222;
+    background-color: #ED553B;
+}
+/*child-menu end*/
+/*right-task start*/
+.right-task {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    width: 60%;
+
+    border-left: 1px solid #ddd;
+}
+.right-task .title {
+    position: relative;
+    padding: 10px;
+    height: 40px;
+
+    line-height: 40px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.right-task .task-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 100px;
+}
+.right-task .title .operate {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.right-task .title .operate a {
+    padding: 0 10px;
+}
+.right-task .title .operate i {
+    cursor: pointer;
+    transition: .2s ease;
+}
+.right-task .title .operate i:hover {
+    color: #ec7259;
+}
+.right-task .date {
+    padding: 7px 0 7px 20px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #EC7259;
+}
+.right-task .content {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 120px;
+    left: 20px;
+    right: 20px;
+    bottom: 50px;
+    font-size: 18px;
+}
+.right-task .button-area {
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    color: #000;
+}
+.right-task .button-area .info {
+    margin-right: 20px;
+    color: #F04D48;
+    font-size: 16px;
+}
+.right-task .button-area button {
+    padding: 8px 20px;
+    margin-right: 30px;
+
+    color: #333;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    transition: .2s ease;
+}
+.right-task .button-area button:hover {
+    color: #fff;
+    background-color: #ec7259;
+}
+.right-task .input-title {
+    font-size: 30px;
+    line-height: 30px;
+
+    border: none;
+    outline: none;
+}
+.right-task .input-date {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.right-task .textarea-content {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.4;
+
+    outline: none;
+    border: 0;
+
+}
+.right-task .content a {
+    color: #ec7259;
+}
+.right-task .content li {
+    display: inline-block;
+    margin-right: 20px;
+}
+/*right-task end*/
+
+
+.cover {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99; /*置顶*/
+}
+.cover .addCover {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -90px;
+    width: 320px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 6px;
+
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #222;
+}
+.addCover .cover-head {
+    padding-bottom: 10px;
+    color: #ec7259;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 1px dashed #ddd;
+}
+.addCover .cover-select {
+    font-size: 16px;
+    padding: 15px;
+}
+.addCover .cover-select select {
+    margin-bottom: 10px;
+    padding-left: 3px;
+
+    width: 160px;
+    height: 28px;
+
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.addCover .cover-select input {
+    box-sizing: border-box;
+    padding-left: 6px;
+
+    width: 160px;
+    height: 28px;
+
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.addCover .cover-decide {
+    text-align: center;
+}
+.addCover .cover-decide button {
+    margin: 0 30px;
+    padding: 6px 20px;
+    border: none;
+    color: #333;
+    background-color: #ddd;
+}
+.addCover .cover-decide button:hover {
+    color: #fff;
+    background-color: #ec7259;
+}
+@media screen and (max-width : 768px) {
+    header {
+        box-shadow: none;
+    }
+    header span {
+        display: none;
+    }
+    .main-menu {
+        position: relative;
+        top: 0;
+        width: 90%;
+        height: 300px;
+        left: 10%;
+        padding-bottom: 40px;
+
+        border : 1px solid #3f3f3f;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .main-menu .all-task h1 {
+        margin: 10px auto;
+    }
+    .main-menu .fa-trash-o {
+        display: inline-block;
+    }
+    .add {
+        position: fixed;
+        left: 0;
+        height: 120px;
+        width: 8%;
+        font-size: 1.2em;
+        border-radius: 0 5px 5px 0;
+    }
+    .add i {
+        width: 100%;
+    }
+    .main-menu .add {
+        top: 20%;
+    }
+    .child-menu {
+        position: relative;
+        left: 10%;
+        top: 10px;
+        width: 90%;
+        height: 300px;
+
+        border : 1px solid #ddd;
+        border-radius: 10px 0 0 10px;
+
+    }
+    .child-menu .status button {
+        width: 30%;
+    }
+    .child-menu .add {
+        bottom: 20%;
+    }
+    .right-task {
+        position: relative;
+        top: 10px;
+        left: 10%;
+        width: 90%;
+        height: 500px;
+        margin-top: 10px;
+
+        border : 1px solid #ddd;
+        border-radius: 10px 0 0 10px;
+
+    }
+    .right-task .input-date {
+        font-size: 14px;
+    }
+}

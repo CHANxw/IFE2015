@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入提示框</title>
+    <style>
+        body {
+            padding: 40px;
+        }
+
+        div ul,
+        div ul li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: block;
+        }
+
+        div input {
+            display: block;
+            height: 22px;
+            line-height: 22px;
+            width: 200px;
+        }
+
+        div ul {
+            display: none;
+            width: 200px;
+            position: absolute;
+            background-color: #F1F1F1;
+        }
+
+        div ul li {
+            height: 22px;
+            line-height: 22px;
+            border-bottom: 1px solid #fff;
+        }
+
+        .active {
+            background-color: cadetblue;
+        }
+
+        span {
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+<!--## 小练习4：输入提示框-->
+
+<!--在和上一任务同一目录下面创建一个`task0002_4.html`文件，在`js`目录中创建`task0002_4.js`，并在其中编码，实现一个类似百度搜索框的输入提示的功能。-->
+
+<!--要求如下：-->
+
+<!-- - 允许使用鼠标点击选中提示栏中的某个选项-->
+<!-- - 允许使用键盘上下键来选中提示栏中的某个选项，回车确认选中-->
+<!-- - 选中后，提示内容变更到输入框中-->
+
+<!--**初级班：**-->
+
+<!-- - 不要求和后端交互，可以自己伪造一份提示数据例如：-->
+
+<!--```-->
+<!--var suggestData = ['Simon', 'Erik', 'Kener'];-->
+<!--```-->
+
+<!--**中级班：**-->
+
+<!-- - 自己搭建一个后端Server，使用Ajax来获取提示数据-->
+
+<!--示例：-->
+
+<!--![示例](img/task0002_sug.png)-->
+<h2>请输入a或b试试</h2>
+<div class="container">
+    <input type="text">
+    <ul>
+        <li>样式一</li>
+        <li>样式二</li>
+    </ul>
+</div>
+<script src="js/util_1.js"></script>
+<script src="js/task0002_4.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        body,ul,li,div,img{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            position: relative;
+            width: 500px;
+            height: 250px;
+            margin: 30px;
+            overflow: hidden;
+        }
+        #img-lists{
+            position: absolute;
+            left: 0;
+            height: 250px;
+        }
+        img{
+            float: left;
+            width: 500px;
+            height: 250px;
+        }
+        .btn{
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            bottom: 5%;
+        }
+        .btn span{
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            margin-left: 5px;
+            background-color: #ddd;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .btn span:first-child{
+            margin-left: 0;
+        }
+        .btn .active{
+            background-color: #000;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="img-lists">
+        <img src="img/safari-big.jpg" alt="1">
+        <img src="img/ie-big.jpg" alt="2">
+        <img src="img/firefox-big.jpg" alt="3">
+        <img src="img/chrome-big.jpg" alt="4">
+    </div>
+</div>
+<script src="js/util_1.js"></script>
+<script src="js/task0002_3.js"></script>
+</body>
+</html>

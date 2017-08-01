@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>diary-记录你的生活</title>
+</head>
+<body>
+    <header>进度日志
+        <span>--记录你的生活</span>
+    </header>
+    <section class="main">
+        <div class="main-menu">
+            <div class="all-task"><h1 class="list-title">所有日志(<span>0</span>)</h1></div>
+            <p>分类列表</p>
+            <ul id="menu-lists" class="list">
+                <li><h2><i class="fa fa-folder"></i>项目一 (<i>4</i>)</h2>
+                    <ul>
+                        <li>任务一<span> (<i>2</i>)</span></li>
+                        <li>任务二<span> (<i>2</i>)</span></li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-folder"></i>项目二<span> (<i>0</i>)</span></li>
+            </ul>
+
+            <button class="add" onclick="clickAddMenu()"><i class="fa fa-plus"></i>新增分类</button>
+        </div>
+        <div class="child-menu">
+            <p>日志列表</p>
+            <div class="status">
+                <button id="all-task">所有</button>
+                <button id="unfinish-task">未完成</button>
+                <button id="finish-task">已完成</button>
+            </div>
+            <div id="task-lists">
+                <div>2017-02-01</div>
+                <ul>
+                    <li>任务一</li>
+                    <li>任务二</li>
+                </ul>
+                <div>2017-02-03</div>
+                <ul>
+                    <li>任务三</li>
+                    <li>任务四</li>
+                </ul>
+            </div>
+            <button class="add" onclick="createTask()"><i class="fa fa-plus-circle"></i>新增日志</button>
+        </div>
+        <div class="right-task">
+            <div class="title">
+                <div class="task-name">使用说明</div>
+                <div class="operate">
+                    <a href=""><i class="fa fa-check-square-o"></i></a>
+                    <a href=""><i class="fa fa-pencil-square-o"></i></a>
+                </div>
+            </div>
+            <div class="date">任务日期:<span>2017-02-01</span></div>
+            <div class="content">任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情</div>
+            <div class="button-area">
+                <span class="info"></span>
+                <button class="save" onclick="sureChange()">保存修改</button>
+                <button class="cancel-save" onclick="cancelChange()">取消</button>
+            </div>
+        </div>
+    </section>
+    <section class="cover">
+        <div class="addCover">
+            <div class="cover-head">新增分类</div>
+            <div class="cover-select">
+                选择主分类：<select name="addMenu" id="menu-select"></select><br>
+                新分类名称：<input type="text" id="newMenuName">
+            </div>
+            <div class="cover-decide">
+                <button onclick="cancel()">取消</button>
+                <button onclick="ok()">确认</button>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/util_1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

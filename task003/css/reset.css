@@ -1,0 +1,55 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+}
+body {
+    font-family: Arial,"微软雅黑";
+    font-size: 12px;
+    color: #222;
+}
+button,input,textarea,select {
+    font-family: Arial,"微软雅黑";
+}
+button,select {
+    cursor: pointer;
+}
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    font-size:100%;
+    color: inherit;
+}
+ul,li {
+    list-style: none;
+}
+.clearfix {
+    *zoom:1;            /*针对IE6的写法*/
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;     /*这个display,用inline-block会产生空白 或者table-caption会导致兼容问题，所以用table就行了*/
+    line-height:0;
+    content:"";  /*内容为空或者别的都行*/
+}
+.clearfix:after {
+    clear:both;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
